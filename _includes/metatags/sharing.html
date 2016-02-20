@@ -18,10 +18,13 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="{{ title }}">
 <meta property="og:image" content="{{ cover | prepend: site.url }}">
+<meta property="og:image:width" content="{{ cover | prepend: site.url }}">
+<meta property="og:image:height" content="{{ cover | prepend: site.url }}">
 <meta property="og:description" content="{{ description }}">
 <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="article:author" content="{{ site.fullname }}">
+<meta property="article:author" content="{{ site.facebook }}" />
 {% for tag in page.tags %}
     <meta property="article:tag" content="{{ tag }}">
 {% endfor %}
