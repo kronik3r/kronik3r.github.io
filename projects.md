@@ -1,6 +1,7 @@
 ---
 layout: projects
 title: Projects
+description: Those are the things that I create outside of work to give back to the OS community and as a way to learn and expirement with new things.
 permalink: /projects/
 
 projects:

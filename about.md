@@ -1,6 +1,7 @@
 ---
 layout: about
 title: About
+description: Web developer with a huge enthusiasm for Design, Art and Music. Autodidact and Lifelong learner.
 permalink: /about/
 ---
 
