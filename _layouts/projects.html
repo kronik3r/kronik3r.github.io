@@ -8,21 +8,23 @@ layout: default
         </div>
 
         <div class="projects-container__description">
-            My portfolio, I'm Motaquillah Maddane a web developer
-            I create stuff that matters using technology.
-            Curreclty working @CN Group. Email · Github · Twitter.
+            {{content}}
+
+            <p>
+                <a href="mailto:{{ site.email }}">Email</a> ·
+                <a href="{{ site.github }}" target="_blank">Github</a> ·
+                <a href="{{ site.twitter }}" target="_blank">Twitter</a>
+            </p>
         </div>
 
         {% for project in page.projects %}
-            <div class="project">
+            <a class="project" href="{{ project.link | prepend: site.baseurl }}" target="_blank">
                 <div class="window-header">
                     <div class="window-actions">
                         <div class="window-actions__item"></div>
                         <div class="window-actions__item"></div>
                         <div class="window-actions__item"></div>
                     </div>
-
-                    <a href="{{ project.link | prepend: site.baseurl }}" class="window-link"></a>
                 </div>
 
                 <img src="{{ project.cover | prepend: site.baseurl }}" alt="Streethead Screenshot" class="project__cover">
@@ -30,7 +32,7 @@ layout: default
                     <span class="project__description__project-name">{{ project.name }}:</span>
                     {{ project.description }}
                 </div>
-            </div>
+            </a>
         {% endfor %}
     </div>
 

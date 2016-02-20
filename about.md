@@ -10,4 +10,4 @@ I come from Casablanca, Morocco and I now live in Prague, Czech Republic.
 
 My main focus right now is having a depth understanding of JavaScript, CSS, user experience and the psychology behind that.
 
-When not doing the later, I enjoy creating/contributing to open source projects, speaking/attending local meetups and dicuss anything related to programming, books, music, life, movies, TV shows and everything in between.
+When not doing the later, I enjoy [creating/contributing](/projects) to open source projects, speaking/attending local meetups and discuss anything related to programming, books, music, life, movies, TV shows and everything in between.

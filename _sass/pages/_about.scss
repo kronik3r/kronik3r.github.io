@@ -18,7 +18,8 @@
 
 .bio {
     font-size: 1.25em; /* 20px */
-    max-width: 900px;
+    max-width: 1000px;
+    padding: 0 2.5em;
     letter-spacing: 0.02em;
 }
 
@@ -48,5 +49,15 @@
 
     @include m('inverse') {
         background-color: $mr-white;
+    }
+}
+
+@media (max-width: 800px) {
+    .bio {
+        font-size: 2em;
+    }
+
+    .social-links {
+        font-size: 2em;
     }
 }
