@@ -1,9 +1,11 @@
 # Site settings
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://electrik-frog.com" # the base hostname & protocol for your site
+cover: /assets/images/covers/cover.png
 
 title: Electrik Frog
 description: My journey twoard becoming a better developer.
+
 # Build settings
 markdown: kramdown
 highlighter: null
