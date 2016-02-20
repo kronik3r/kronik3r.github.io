@@ -2,6 +2,7 @@
 title: Understanding
 subtitle: A Coin With Two Sides
 cover: /assets/images/covers/talking.jpg
+sharing-cover: /assets/images/sharing-covers/talking.jpg
 layout: post
 set: this-life
 tags:
