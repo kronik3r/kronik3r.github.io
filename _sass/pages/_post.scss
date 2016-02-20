@@ -1,0 +1,100 @@
+.post {
+    font-size: 1.25em; /* 20px */
+
+    @include e('info') {
+        height: 500px;
+        width: 100%;
+        color: $mr-white;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        padding: 0.5em;
+        position: relative;
+        overflow: hidden;
+
+        @include m('with-cover') {
+            background-color: $iron;
+            background: no-repeat center center;
+            background-attachment: scroll;
+            background-size: cover;
+        }
+
+        .post-title {
+            font-size: 2.5em; /* 50px */
+            margin-top: 3.8em;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 0 0 100%;
+
+            @include e('text') {
+                padding: 0.18em;
+                padding-top: 0;
+                border-bottom: 4px $mr-white solid;
+                font-weight: 900;
+            }
+
+            @include e('sub') {
+                margin-top: 0.4em;
+                margin-bottom: 2em;
+                font-size: 0.4em;
+            }
+        }
+
+        .post-tags {
+            flex: 0 0 50%;
+            text-align: left;
+
+            @include e('item') {
+                text-transform: capitalize;
+
+                &:not(:last-child):after {
+                    content: ",";
+                }
+            }
+        }
+
+        .post-date {
+            flex: 0 0 50%;
+            text-align: right;
+        }
+
+        .post-tags,
+        .post-date {
+            font-size: 0.8em;
+        }
+    }
+
+    @include e('content') {
+        padding: 2em;
+        line-height: 1.6em;
+        font-weight: 400;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    a {
+        &:hover {
+            border-bottom: 4px solid $oranges;
+            background-color: #f9f9f9;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .post {
+        font-size: 2em;
+
+        @include e('info') {
+            height: auto;
+            padding: 2em .5em;
+        }
+
+        .post-title {
+            margin-top: 0;
+        }
+    }
+}

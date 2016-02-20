@@ -1,0 +1,39 @@
+/* >The Whole page
+-------------------------------- */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* >Page Title
+-------------------------------- */
+.title {
+    font-size: 1.8em; // 40px
+    text-transform: uppercase;
+    font-weight: 900;
+    background-color: $oranges;
+    padding: 0.75em 0px;
+    text-align: center;
+    color: $mr-white;
+    text-shadow: -0.07em 0.07em 0 $oranges,
+        -0.15em 0.13em 0 rgba(255, 255, 255, 0.7);
+    letter-spacing: 0.3em;
+}
+
+/* >Content
+-------------------------------- */
+.content {
+    flex: 1;
+    padding: 0 8.75em;
+    padding-top: 5em;
+
+    @include m('post-sets') {
+        background-color: $iron;
+        font-size: 1em;
+    }
+
+    @include m('post') {
+        padding: 0;
+    }
+}

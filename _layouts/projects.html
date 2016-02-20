@@ -1,0 +1,52 @@
+---
+layout: default
+---
+<body class="projects-page">
+    <div class="projects-container">
+        <div class="projects-container__title">
+            Projects
+        </div>
+
+        <div class="projects-container__description">
+            My portfolio, I'm Motaquillah Maddane a web developer
+            I create stuff that matters using technology.
+            Curreclty working @CN Group. Email · Github · Twitter.
+        </div>
+
+        {% for project in page.projects %}
+            <div class="project">
+                <div class="window-header">
+                    <div class="window-actions">
+                        <div class="window-actions__item"></div>
+                        <div class="window-actions__item"></div>
+                        <div class="window-actions__item"></div>
+                    </div>
+
+                    <a href="{{ project.link | prepend: site.baseurl }}" class="window-link"></a>
+                </div>
+
+                <img src="{{ project.cover | prepend: site.baseurl }}" alt="Streethead Screenshot" class="project__cover">
+                <div class="project__description">
+                    <span class="project__description__project-name">{{ project.name }}:</span>
+                    {{ project.description }}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    <footer class="footer">
+        <div class="credits">
+            <div class="credits__wing credits__wing--left">
+                Crafted by hand
+                <div class="credits__wing__sentence">Copyright 2015</div>
+            </div>
+            <div class="credits__flag"></div>
+            <div class="credits__wing credits__wing--right">
+                Made in Morocco
+                <div class="credits__wing__sentence">Motaquillah Maddane</div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="{{ '/' | prepend: site.baseurl }}" class="back back--inverse"></a>
+</body>

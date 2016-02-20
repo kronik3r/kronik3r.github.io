@@ -1,0 +1,45 @@
+.footer {
+    background-color: $mr-white;
+    color: #D4D4D5;
+
+    @include m('inverse') {
+        background-color: $iron;
+        color: $mr-white;
+    }
+}
+
+.credits {
+    display: flex;
+    justify-content: center;
+    padding: 1.56em 0;
+    font-size: 1.13em; // 18
+
+    @include e('wing') {
+        font-weight: 700;
+        line-height: 1.4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include e('sentence')  {
+            font-weight: 300;
+            font-size: 0.78em;
+        }
+
+        @include m('left') {
+            text-align: right;
+            margin-right: 1.39em;
+        }
+
+        @include m('right') {
+            text-align: left;
+            margin-left: 1.39em;
+        }
+    }
+
+    @include e('flag') {
+        height: 2.78em;
+        width: 4.11em;
+        background-color: #D4D4D5;
+    }
+}

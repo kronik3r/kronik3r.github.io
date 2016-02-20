@@ -1,0 +1,11 @@
+# Site settings
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+
+sets:
+    - title: This Developer Life
+      description: My stories twoard becoming a better developer and also trying to unlock the secrets of the univers
+      id: this-life

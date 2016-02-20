@@ -1,0 +1,11 @@
+---
+layout: page
+title: Home
+page-title: My corner of the internet
+---
+
+<div class="content content--post-sets">
+    {% for set in site.sets %}
+        {% include set/set.html set=set %}
+    {% endfor %}
+</div>

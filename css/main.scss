@@ -1,0 +1,32 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+/* >Core
+-------------------------------- */
+@import 'core/variables';
+@import 'core/base';
+@import 'core/utilities';
+@import 'core/syntax-highlighter';
+
+/* >Layout
+-------------------------------- */
+@import 'layout/header';
+@import 'layout/content';
+@import 'layout/footer';
+
+/* >Pages
+-------------------------------- */
+@import 'pages/home';
+@import 'pages/post';
+@import 'pages/projects';
+@import 'pages/about';
+
+/* >Posts specific styling
+-------------------------------- */
+@import 'posts/mac-apps';
+
+
+/* >Other thatn desktop
+-------------------------------- */
+@import 'rwd';

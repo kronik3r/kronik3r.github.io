@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<body>
+    {% include header.html %}
+
+    {{content.layout}}
+
+    <div class="title shadow-vintage">
+        {{ page.page-title }}
+    </div>
+
+    {{ content }}
+
+    {% include footer.html inverse=page.inverse-footer %}
+</body>

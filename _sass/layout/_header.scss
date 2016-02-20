@@ -1,0 +1,64 @@
+/* Summary
+--------------------------------
+    >Base styling
+    >Logo
+    >Menu
+-------------------------------- */
+
+/* >Base styling
+-------------------------------- */
+.header {
+    background-color: $iron;
+    color: $oranges;
+    display: flex;
+    font-size: 1.38em; /*60px*/
+    flex-wrap: wrap;
+    padding: .8em 1.2em;
+
+    @include m('within-post') {
+        position: absolute;
+        background-color: transparent;
+        z-index: 1;
+        width: 100%;
+    }
+}
+
+/* >Logo
+-------------------------------- */
+.logo {
+    flex: 0 1 auto;
+
+    @include e('img') {
+        width: 7em;
+
+        @include m('mobile') {
+            display: none;
+        }
+    }
+}
+
+/* >Menu
+-------------------------------- */
+.menu {
+    font-size: 0.8em;
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 700;
+
+    @include e('item') {
+        flex: 0 1 auto;
+        color: $oranges;
+        text-decoration: none;
+
+        &:not(:first-child) {
+            padding-left: 2em;
+        }
+
+        &--active,
+        &:hover {
+            color: $mr-white;
+        }
+    }
+}
