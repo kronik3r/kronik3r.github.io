@@ -14,8 +14,8 @@
 <link rel="author" href="{{ site.facebook }}">
 
 <!-- Open Graph -->
-<meta property="og:locale" content="{{ site.lang }}">
 <meta property="og:type" content="article">
+<meta property="og:locale" content="en_US" />
 <meta property="og:title" content="{{ title }}">
 <meta property="og:image" content="{{ cover | prepend: site.url }}">
 <meta property="og:image:width" content="1200">
@@ -27,4 +27,3 @@
 {% for tag in page.tags %}
     <meta property="article:tag" content="{{ tag }}">
 {% endfor %}
-<meta property="og:locale:locale" content="en_US" />
