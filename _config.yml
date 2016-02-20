@@ -3,9 +3,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://electrik-frog.com" # the base hostname & protocol for your site
 
 title: Electrik Frog
-description: >
-    My journey twoard becoming a better developer.
-
+description: My journey twoard becoming a better developer.
 # Build settings
 markdown: kramdown
 highlighter: null
@@ -14,6 +12,7 @@ highlighter: null
 exclude: ["README.md", "LICENSE"]
 
 # User's info
+fullname: Motaquillah Maddane
 email: mailto:maddane.info@gmail.com
 twitter: https://twitter.com/electrik_frog
 github: https://github.com/kronik3r
