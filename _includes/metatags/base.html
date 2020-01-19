@@ -1,9 +1,6 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<link rel="icon" type="image/png" href="{{ '/assets/images/favicon-32x32.png' | prepend: site.baseurl }}" sizes="32x32" />
-<link rel="icon" type="image/png" href="{{ '/assets/images/favicon-16x16.png' | prepend: site.baseurl }}" sizes="16x16" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{% if page.title %} {{ page.title }} {% if page.subtitle  %} — {{ page.subtitle }} {% endif %} &raquo; {% endif %} {{ site.title }}</title>
 <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-{% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
