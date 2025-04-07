@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Uneven Suspended Attention</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="{{ '/styles/index.css' | relative_url }}" />
+    <link rel="stylesheet" href="{{ '/styles/response.css' | relative_url }}" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    {{ content }}
+
+    <svg class="svg-thing">
+        <defs>
+            <filter id="noiseFilter">
+                <feTurbulence
+                    type="fractalNoise"
+                    baseFrequency="0.6"
+                    stitchTiles="stitch"
+                />
+                <feColorMatrix
+                    in="colorNoise"
+                    type="matrix"
+                    values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+                />
+                <feComposite operator="in" in2="SourceGraphic" result="monoNoise" />
+                <feBlend in="SourceGraphic" in2="monoNoise" mode="screen" />
+            </filter>
+            <clipPath id="myClip">
+              <path d="M320.61569754735183 36.749706213432034C282.52669048761874 -10.50160349929584 201.636645957386 -5.266002709907809 150.98219840184402 12.40415567632266C100.32775084630202 30.07431406255313 -21.399994845633188 95.519346818087 16.689012214099876 142.77065653081485C54.77801927383294 190.0219662435427 328.86179320470046 313.58217233892026 379.51624076024245 295.9120139526898C430.17068831578445 278.2418555664593 358.7047046070849 84.00101592615988 320.61569754735183 36.749706213432034C282.52669048761874 -10.50160349929584 201.636645957386 -5.266002709907809 150.98219840184402 12.40415567632266 " fill="hsl(340, 45%, 50%)" transform="matrix(0.9777236924095909,0,0,0.9777236924095909,-9.020250020272613,53.73460745067459)"></path>
+            </clipPath>
+        </defs>
+    </svg>
+</body>
+</html>

@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<div class="page post-page">
+    {% include header.html type="post" %}
+
+    <main class="post-content">
+        <div class="title texture">{{ page.title }}</div>
+        <div class="subtitle">{{ page.subtitle }}</div>
+
+        <div class="images">
+            <img src="{{ page.cover1 | relative_url }}" alt="">
+            <img src="{{ page.cover2 | relative_url }}" alt="">
+        </div>
+
+        <hr>
+
+        <div class="piece">
+            {{ content }}
+        </div>
+
+        <div class="note">
+            If you have any thoughts on this, I woud love to hear what you think. Email me at:
+            <b>maddane.info@gmail.com</b>
+        </div>
+    </main>
+
+    {% include footer.html %}
+</div>

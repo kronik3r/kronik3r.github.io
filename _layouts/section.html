@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class="page home-page">
+    {% include header.html type="default" %}
+
+    <main class="main">
+        {{ content }}
+
+        <div class="menu">
+            <div class="inner">
+                {% include menu.html %}
+            </div>
+        </div>
+    </main>
+
+    {% include footer.html %}
+</div>

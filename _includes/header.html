@@ -1,0 +1,21 @@
+{% if include.type == 'default' %}
+  <a class="header" href="/">
+      <h1>unevenly sustained attention</h1>
+      <p>Exploring ideas about programming</p>
+
+      <div class="blob-cont">
+        <div class="yellow blob"></div>
+        <div class="blue blob"></div>
+        <div class="violet blob"></div>
+        <div class="red blob"></div>
+        <div class="green blob"></div>
+      </div>
+  </a>
+{% elsif include.type == 'post' %}
+  <div class="header--post" href="/">
+      <a href="/" class="base">unevenly sustained attention</a>
+      <div class="header__menu">
+          {% include menu.html %}
+      </div>
+  </div>
+{% endif %}

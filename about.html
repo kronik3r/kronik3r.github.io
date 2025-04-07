@@ -1,85 +1,26 @@
 ---
+layout: default
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Uneven Suspended Attention</title>
+<div class="page home-page">
+    {% include header.html type="default" %}
 
-    <!-- styles -->
-    <link rel="stylesheet" href="{{ '/styles/index.css' | relative_url }}" />
-    <link rel="stylesheet" href="{{ '/styles/response.css' | relative_url }}" />
+    <main class="main main--about">
+        <div class="about">
+            <img src="{{ '/assets/motaki.jpeg' | relative_url }}" />
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Rubik+Mono+One&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="page home-page">
-        <!-- <div class="palette">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div> -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolor eveniet voluptatibus quo perferendis omnis alias voluptates ducimus esse voluptatum, praesentium autem sapiente deserunt at quod corrupti molestias recusandae error possimus consectetur sint nostrum temporibus est, suscipit. Voluptatem, assumenda aliquam sapiente expedita pariatur, dolorem architecto ad repellendus, aliquid error possimus totam quibusdam dignissimos. Fuga eaque sequi maiores fugit cupiditate dolorum error doloribus sunt inventore totam. Id culpa velit quia! Repudiandae cum, unde deserunt fugiat ex reprehenderit hic quia neque possimus, autem laudantium quo fugit illum nulla harum in aperiam culpa. Numquam, ab corrupti eum quo deleniti pariatur minima possimus, harum. <br><br>
 
-        <a class="header" href="/">
-            <h1>unevenly sustained attention</h1>
-            <p>Exploring ideas about programming</p>
-            <div class="blob-cont">
-              <div class="yellow blob"></div>
-              <div class="blue blob"></div>
-              <div class="violet blob"></div>
-              <div class="red blob"></div>
-              <div class="green blob"></div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ratione ipsam provident deleniti distinctio, aperiam consequuntur porro alias necessitatibus. Enim ratione vero similique ea! Magni perspiciatis nihil saepe, a pariatur!
+        </div>
+
+        <div class="menu page--title">
+            <div class="inner texture2">
+                ABOUT
             </div>
-        </a>
+        </div>
 
-        <main class="main main--about">
-            <div class="about">
-                <img src="{{ '/assets/motaki.jpeg' | relative_url }}" />
+    </main>
 
-                Thinking of the movie where’s my friend’s house? Makes me think of Noor and the innocence of childhood and the importance of primary emotions and virtues. Noor seems to be curious and welcoming and playful. This makes me think about my own primary virtues, the once I lost and the ones I no longer believe in. I hope that having her and being around her will teach me again how to find those emotions. <br><br>
-
-                Coming back to the movie for a second, it really makes me feel like I am witnessing someone bringing a diamond out of some muddy and violent river. Not only was the director able to extract it out of this impossible place but, also able to hold it in the clear of daylight, for us the audience and turn it left and right for our close examination. And we’re just mesmerized by how pure and real it is and in turn makes us go look for our own diamonds in our own muddy rivers and for those who have some cheap knock off version of it, to throw it away and go looking for the real thing.
-            </div>
-
-            <div class="menu page--title">
-                <div class="inner texture2">
-                    ABOUT
-                </div>
-            </div>
-        </main>
-
-        <footer class="footer">
-            MOTAQUILLAH MADDANE
-        </footer>
-    </div>
-
-    <svg class="svg-thing">
-        <defs>
-            <filter id="noiseFilter">
-                <feTurbulence
-                    type="fractalNoise"
-                    baseFrequency="0.6"
-                    stitchTiles="stitch"
-                />
-                <feColorMatrix
-                    in="colorNoise"
-                    type="matrix"
-                    values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
-                />
-                <feComposite operator="in" in2="SourceGraphic" result="monoNoise" />
-                <feBlend in="SourceGraphic" in2="monoNoise" mode="screen" />
-            </filter>
-            <clipPath id="myClip">
-              <path d="M320.61569754735183 36.749706213432034C282.52669048761874 -10.50160349929584 201.636645957386 -5.266002709907809 150.98219840184402 12.40415567632266C100.32775084630202 30.07431406255313 -21.399994845633188 95.519346818087 16.689012214099876 142.77065653081485C54.77801927383294 190.0219662435427 328.86179320470046 313.58217233892026 379.51624076024245 295.9120139526898C430.17068831578445 278.2418555664593 358.7047046070849 84.00101592615988 320.61569754735183 36.749706213432034C282.52669048761874 -10.50160349929584 201.636645957386 -5.266002709907809 150.98219840184402 12.40415567632266 " fill="hsl(340, 45%, 50%)" transform="matrix(0.9777236924095909,0,0,0.9777236924095909,-9.020250020272613,53.73460745067459)"></path>
-            </clipPath>
-        </defs>
-    </svg>
-
-</body>
-</html>
+    {% include footer.html %}
+</div>
