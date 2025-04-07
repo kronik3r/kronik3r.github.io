@@ -1,8 +1,10 @@
 ---
 ---
 /* Default (Mobile First) */
-.piece {
-    font-size: 16px;
+.piece { font-size: 16px; }
+
+.title, .page--title {
+    font-size: 60px;
 }
 
 .home-page {
@@ -40,7 +42,7 @@
     }
 }
 
-.menu--about {
+.page--title {
     margin-bottom: 0;
 }
 
@@ -58,12 +60,18 @@
     .piece {
         font-size: 18px;
     }
+
+    .title { font-size: 70px; }
 }
 
 /* Tablets (landscape) and small desktops */
 @media (min-width: 768px) {
     .piece {
         font-size: 20px;
+    }
+
+    .title {
+        font-size: 90px;
     }
 
     .header--post {
@@ -101,9 +109,10 @@
         }
     }
 
-    .menu--about {
+    .page--title {
         padding-top: 300px;
         align-items: start;
+        font-size: 100px;
     }
 
     .header {
@@ -121,6 +130,8 @@
     /*.piece {
         font-size: 22px;
     }*/
+
+    .title { font-size: 100px; }
 
     .footer {
         margin-top: auto;

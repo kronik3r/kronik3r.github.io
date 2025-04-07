@@ -116,6 +116,7 @@ body::before {
     .title,
     .subtitle {
         text-align: center;
+        padding: 0 5px;
     }
 
     .images {
@@ -147,7 +148,6 @@ body::before {
         font-family: "Rubik Mono One", serif;
         font-weight: 400;
         font-style: normal;
-        font-size: 100px;
         word-spacing: -0.5em;
         text-align: left;
         line-height: 0.9;
@@ -442,12 +442,12 @@ body::before {
 
     > img {
         clip-path: url(#myClip);
+        display: inline-block;
     }
 }
 
-.menu--about {
+.page--title {
     font-family: "Rubik Mono One", serif;
-    font-size: 100px;
     color: #FF0000;
 }
 
