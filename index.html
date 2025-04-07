@@ -1,31 +1,94 @@
 ---
-layout: new
 ---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<div class="main">
-  <span class="name">
-    Motaquillah Maddane
-  </span>
+    <title>Uneven Suspended Attention</title>
 
-  <div class="bio">
-    <p>
-      I make products to help small businesses.
-    </p>
-    Currently: <a class="project" href="https://www.paipo-app.com" data-desc="Painless retrospectives for remote teams.">Paipo</a>, <a class="project" href="https://instagrab.app/" data-desc="A platform for groceries delivery">Instagrab</a>. <br>
-    Past: <a class="project" href="http://codewatay.com/" data-desc="A podcast about programming">Codewatay</a>, <a class="project" href="http://daktilo.github.io/" data-desc="A Jekyll theme">Daktilo</a> and <a class="project" href="http://streethead.github.io/" data-desc="A platform for online meetups">Streethead</a>.
-  </div>
+    <!-- styles -->
+    <link rel="stylesheet" href="{{ '/styles/index.css' | relative_url }}" />
+    <link rel="stylesheet" href="{{ '/styles/response.css' | relative_url }}" />
 
-  <div class="links">
-    <a target="blank" href="https://speakerdeck.com/motaqui">Talks</a>
-    <a target="blank" href="https://www.linkedin.com/in/mmaddane/">Linkedin</a>
-    <a target="blank" href="https://github.com/kronik3r">Github</a>
-  </div>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page home-page">
+        <a class="header" href="/">
+            <h1>unevenly sustained attention</h1>
+            <p>Exploring ideas about programming</p>
+            <div class="blob-cont">
+              <div class="yellow blob"></div>
+              <div class="blue blob"></div>
+              <div class="violet blob"></div>
+              <div class="red blob"></div>
+              <div class="green blob"></div>
+            </div>
+        </a>
 
-  <span class="info">
-    <span class="resume">
-      Always open for interesting opportunities.
-    </span>
-    <span class="contact">maddane[dot]info[at]gmail[dot]com</span> <br>
-    <span class="location">Prague – Casablanca</span>
-  </span>
-</div>
+        <main class="main">
+            <div class="posts">
+                <a class="post" href="/post">
+                    <h2>On Nootbooks and Ideas</h2>
+                    <div>01.02.2021</div>
+                </a>
+
+                <a class="post" href="/post">
+                    <h2>Steinbeck’s Eden </h2>
+                    <div>01.02.2021</div>
+                </a>
+
+                <a class="post">
+                    <h2>You’re The Machine, On Bordom </h2>
+                    <div>01.02.2021</div>
+                </a>
+
+                <a class="post">
+                    <h2>Early Encoutner With Technology </h2>
+                    <div>01.02.2021</div>
+                </a>
+
+                <a class="post">
+                    <h2>Who’s Talking?</h2>
+                    <div>01.02.2021</div>
+                </a>
+
+                <a class="post">
+                    <h2>On Architecture and Ikea Tables?</h2>
+                    <div>01.02.2021</div>
+                </a>
+            </div>
+
+            <div class="menu">
+                <div class="inner">
+                    <a href="#">Writings</a>
+                    <a href="#" class="active">Reviews</a>
+                    <a href="/about">About</a>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            MOTAQUILLAH MADDANE
+        </footer>
+    </div>
+
+    <svg class="svg-thing">
+      <filter id='noiseFilter'>
+        <feTurbulence
+          type='fractalNoise'
+          baseFrequency='0.6'
+          stitchTiles='stitch'/>
+         <feColorMatrix in="colorNoise" type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0" />
+            <feComposite operator="in" in2="SourceGraphic" result="monoNoise"/>
+            <feBlend in="SourceGraphic" in2="monoNoise" mode="screen" />
+      </filter>
+
+    </svg>
+</body>
+</html>

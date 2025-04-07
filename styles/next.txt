@@ -1,0 +1,8 @@
+Next: 
+- Broke on mobile.
+- Wrap things and push.
+- Start working on dynamic content.
+- Link do domain name.
+- Write few articles + about page.
+- Publish
+- Needs Work/projects page
