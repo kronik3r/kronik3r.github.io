@@ -228,6 +228,7 @@ body::before {
 
 .posts {
     flex: 0 0 362px;
+    min-height: 400px;
 
     /*&:hover {
         color: #888888;

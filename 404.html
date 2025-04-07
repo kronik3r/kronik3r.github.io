@@ -1,25 +1,25 @@
 ---
-permalink: /404.html
 layout: default
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+<div class="page home-page">
+    {% include header.html type="default" %}
 
-<div class="container">
-  <h1>404</h1>
+    <main class="main main--about">
+        <div class="about">
+          Wrong URL or this page doesn't exist anymore....  <br> <br>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+
+          <a href="/"><b>Click here to visit the home page.</b></a>
+        </div>
+
+        <div class="menu page--title">
+            <div class="inner texture2">
+                404
+            </div>
+        </div>
+
+    </main>
+
+    {% include footer.html %}
 </div>

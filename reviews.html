@@ -1,0 +1,11 @@
+---
+layout: section
+---
+
+<div class="posts">
+    {% for post in site.posts %}
+        {% if post.categories contains "reviews" %}
+            {% include post_link.html %}
+        {% endif %}
+    {% endfor %}
+</div>
