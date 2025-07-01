@@ -5,6 +5,7 @@ layout: default
     {% include header.html type="post" %}
 
     <main class="post-content">
+        <div class="date">{{ page.date | date: "%d.%m.%Y" }}</div>
         <div class="title texture">{{ page.title }}</div>
         <div class="subtitle">{{ page.subtitle }}</div>
 

@@ -114,9 +114,17 @@ body::before {
     font-style: normal;
 
     .title,
+    .subtitle,
+    .date {
+        text-align: left;
+        font-weight: bold;
+    }
+
+
+    .date,
     .subtitle {
-        text-align: center;
-        padding: 0 5px;
+        font-size: 16px;
+        opacity: 0.6;
     }
 
     .images {
@@ -135,13 +143,15 @@ body::before {
 
     hr {
         display: block;
-        margin-bottom: 60px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto 60px auto;
         border-style: inset;
         border-width: 1px;
         border-top: 3px double;
         border-bottom: none;
+    }
+
+    .date {
+        margin-bottom: 4px;
     }
 
     .title {
@@ -149,13 +159,7 @@ body::before {
         font-weight: 400;
         font-style: normal;
         word-spacing: -0.5em;
-        text-align: left;
         line-height: 0.9;
-    }
-
-    .subtitle {
-        font-size: 16px;
-        text-align: left;
     }
 
     .piece {
@@ -261,10 +265,6 @@ body::before {
         font-style: normal;
         font-size: 10px;
         opacity: 0.6;
-    }
-
-    .post__date {
-
     }
 }
 

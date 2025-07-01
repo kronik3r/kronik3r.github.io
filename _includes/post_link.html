@@ -1,5 +1,5 @@
 <a class="post" href="{{ post.url | prepend: site.baseurl }}">
-    <div class="post__date">{{ post.date | date: "%d.%m.%Y" }}</div>
+    <div>{{ post.date | date: "%d.%m.%Y" }}</div>
     <h2>{{ post.title }}</h2>
-    {% if post.subtitle %}<div class="post__subtitle">{{ post.subtitle }}</div> {% endif %}
+    {% if post.subtitle %}<div>{{ post.subtitle }}</div> {% endif %}
 </a>
