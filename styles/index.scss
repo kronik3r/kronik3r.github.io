@@ -48,7 +48,7 @@ body::before {
 .page {
     margin: 0px auto;
     padding: 0px;
-    max-width: 1000px;
+    max-width: 800px;
     width: 80%;
 }
 
@@ -201,6 +201,7 @@ body::before {
         font-weight: 400;
         font-style: normal;
         font-size: 14px;
+        transition: color 0.3s ease;
 
         &:not(:last-child) {
             margin-right: 20px;
@@ -212,12 +213,11 @@ body::before {
 
         &.active {
             color: #888888;
-        }
-
-        &.active {
             text-decoration: underline;
             text-decoration-thickness: 3px;
         }
+
+        
     }
 }
 
@@ -229,10 +229,6 @@ body::before {
 .posts {
     flex: 0 0 362px;
     min-height: 400px;
-
-    /*&:hover {
-        color: #888888;
-    }*/
 }
 
 .post {
@@ -244,7 +240,7 @@ body::before {
     }
 
     &:not(:last-child) {
-        margin-bottom: 25px;
+        margin-bottom: 30px;
     }
 
     * {
@@ -263,7 +259,12 @@ body::before {
         font-family: "Rubik Mono One", serif;
         font-weight: 400;
         font-style: normal;
-        font-size: 12px;
+        font-size: 10px;
+        opacity: 0.6;
+    }
+
+    .post__date {
+
     }
 }
 
@@ -279,6 +280,7 @@ body::before {
         font-style: normal;
         font-size: 14px;
         text-decoration: none;
+        transition: color 0.3s ease;
     }
 
     a:not(:last-child) {
