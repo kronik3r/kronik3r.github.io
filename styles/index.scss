@@ -108,6 +108,15 @@ body::before {
 
 }
 
+hr {
+  display: block;
+  border-style: inset;
+  border-width: 1px;
+  border-top: 3px double;
+  border-bottom: none;
+  width: 100%;
+}
+
 .post-content {
     font-family: "Merriweather", serif;
     font-weight: 400;
@@ -141,15 +150,6 @@ body::before {
         }
     }
 
-    hr {
-        display: block;
-        margin: 0 auto 60px auto;
-        border-style: inset;
-        border-width: 1px;
-        border-top: 3px double;
-        border-bottom: none;
-    }
-
     .date {
         margin-bottom: 4px;
     }
@@ -165,12 +165,16 @@ body::before {
     .piece {
         text-align: justify;
         text-justify: inter-word;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         line-height: 1.8;
     }
 
+    hr {
+      margin: 0 auto 60px auto;
+    }
+
     .note {
-        margin-top: 80px;
+        margin-top: 40px;
         font-size: 14px;
         text-align: center;
         color: #888888;
@@ -228,6 +232,56 @@ body::before {
 .main {
     display: flex;
     width: 100%;
+}
+
+.four-oh-four {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+    &__title {
+        font-family: "Rubik Mono One", serif;
+        font-weight: 400;
+        font-style: normal;
+
+        div:nth-child(1) {
+          font-size: 18px;
+          margin-bottom: -10px;
+        }
+
+        div:nth-child(2) {
+          font-size: 30px;
+          color: var(--red);
+        }
+
+        div:nth-child(3) {
+          font-size: 10px;
+          opacity: 0.6;
+          font-family: "Merriweather", serif;
+        }
+    }
+    
+    &__poem {
+        font-family: "Merriweather", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        text-align: left;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        line-height: 1.8;
+    }
+
+    &__note {
+      margin-top: 10px;
+      font-size: 14px;
+      text-align: center;
+
+      a {
+        font-weight: bold;
+        text-decoration: underline;
+      }
+    }
 }
 
 .posts {

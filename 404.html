@@ -6,20 +6,39 @@ title: Not found
 <div class="page home-page">
     {% include header.html type="default" %}
 
-    <main class="main main--about">
-        <div class="about">
-          Wrong URL or this page doesn't exist anymore....  <br> <br>
-
-
-          <a href="/"><b>Click here to visit the home page.</b></a>
+    <main class="four-oh-four">
+        <div class="four-oh-four__title">
+          <div>404</div>
+          <div>Lost</div>
+          <div>
+            <a href="https://www.poetryfoundation.org/poetrymagazine/browse?volume=118&issue=4&page=35">a poem</a> by David Wagoner (1999)
+          </div>
         </div>
 
-        <div class="menu page--title">
-            <div class="inner texture2">
-                404
-            </div>
+        <div class="four-oh-four__poem">
+          <p>
+            Stand still. The trees ahead and bushes beside you <br/>
+            Are not lost. Wherever you are is called Here, <br/>
+            And you must treat it as a powerful stranger, <br/>
+            Must ask permission to know it and be known. <br/>
+            The forest breathes. Listen. It answers, <br/>
+            I have made this place around you. <br/>
+            If you leave it, you may come back again, saying Here. <br/>
+            No two trees are the same to Raven. <br/>
+            No two branches are the same to Wren. <br/>
+            If what a tree or a bush does is lost on you, <br/>
+            You are surely lost. Stand still. The forest knows <br/>
+            Where you are. You must let it find you. <br/>
+          </p>
         </div>
 
+        <hr>
+
+        <div class="four-oh-four__note">
+          Hey there 👋 — looks like the page you’re trying to reach doesn’t exist anymore. <br>
+          You can head back to the <a href="{{ '/' | relative_url }}">home page</a> and try searching from there. <br>
+          If you’re stuck, feel free to email me at <a href="mailto:maddane.info@gmail.com?subject=Looking%20for%20page%20XXX%20In%20unevenlysuspendedattention.com">maddane.info@gmail.com</a> — I’ll do my best to help you out. <br>
+        </div>
     </main>
 
     {% include footer.html %}
