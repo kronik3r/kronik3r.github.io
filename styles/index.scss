@@ -492,14 +492,19 @@ hr {
 
 .about {
     text-align: justify;
-    text-justify: inter-word;
     line-height: 1.8;
     font-size: 18px;
     font-family: "Merriweather", serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
     > img {
-        clip-path: url(#myClip);
-        display: inline-block;
+        margin: 30px 0;
+        max-width: 260px;
+        width: 80%;
+        border-radius: 4px;
+        box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.1);
     }
 }
 
