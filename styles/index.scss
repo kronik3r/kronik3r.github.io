@@ -71,11 +71,12 @@ body::before {
     display: flex;
     flex-direction: column;
     /* stretch: children use full .page width (avoids max-content + min-width:auto overflow).
-       Centering is handled with text-align inside header / footer. */
+       Default text alignment for the page; .title / .piece etc. set their own. */
     align-items: stretch;
     min-height: 100vh;
     box-sizing: border-box;
     padding: 20px 0px 0px 0px;
+    text-align: center;
 }
 
 .header {
@@ -123,6 +124,43 @@ hr {
   border-top: 3px double;
   border-bottom: none;
   width: 100%;
+}
+
+/* Novel-style transition: add `{: .scene-break}` on the line after `***` in Markdown */
+.post-content .piece hr.scene-break {
+  border: none;
+  /* Extra room below * * * before the next paragraph */
+  margin: 1.2rem auto 2.35rem;
+  padding: 0;
+  height: 0;
+  width: 100%;
+  max-width: none;
+  text-align: center;
+  overflow: visible;
+  background: none;
+}
+
+/* Pull quote + scene-break: avoid stacked margins reading as a huge gap above * * * */
+.post-content .piece blockquote:not(.epigraph) + hr.scene-break {
+  margin-top: 0.55rem;
+}
+
+.post-content .piece hr.scene-break + p {
+  margin-top: 1.15em;
+}
+
+.post-content .piece hr.scene-break::before {
+  content: '* * *';
+  display: inline-block;
+  font-family: "Merriweather", serif;
+  font-size: 0.7rem;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.42em;
+  color: color-mix(in srgb, var(--title) 38%, var(--bg) 62%);
+  line-height: 1;
+  vertical-align: baseline;
+  padding: 0.12em 0;
 }
 
 .post-content {
@@ -221,6 +259,34 @@ hr {
         hyphenate-limit-chars: 7 3 3;
     }
 
+    /* In-article links: quiet underline + title tint, in the spirit of .epigraph */
+    .piece a {
+        color: color-mix(in srgb, var(--title) 42%, var(--text) 58%);
+        text-decoration: underline;
+        text-decoration-color: color-mix(in srgb, var(--yellow) 40%, var(--title) 60%);
+        text-decoration-thickness: 1px;
+        text-underline-offset: 0.18em;
+        transition: color 0.2s ease, text-decoration-color 0.2s ease;
+    }
+
+    .piece a:hover {
+        color: color-mix(in srgb, var(--title) 58%, var(--text) 42%);
+        text-decoration-color: color-mix(in srgb, var(--yellow) 52%, var(--title) 48%);
+    }
+
+    /* Cover image attribution (Unsplash etc.); use <p class="cover-credit"> at end of post */
+    .piece .cover-credit {
+        margin-top: 2.25rem;
+        margin-bottom: 0;
+        font-size: 0.82em;
+        line-height: 1.5;
+        color: color-mix(in srgb, var(--text) 72%, var(--title) 28%);
+        text-align: left;
+        text-justify: auto;
+        hyphens: none;
+        -webkit-hyphens: none;
+    }
+
     /* Pull quotes: sage panel; golden left bar only (not green) */
     .piece blockquote:not(.epigraph) {
         margin: 1.5rem 0 1.75rem;
@@ -245,6 +311,10 @@ hr {
 
     .piece blockquote:not(.epigraph) p + p {
         margin-top: 0.65em;
+    }
+
+    .piece blockquote:not(.epigraph):has(+ hr.scene-break) {
+        margin-bottom: 0.65rem;
     }
 
     /* Reusable opening epigraph: add `{: .epigraph}` after a blockquote in Markdown */
@@ -466,6 +536,7 @@ hr {
 .footer {
     padding: 30px;
     color: #888888;
+    text-align: center;
 
     font-family: "Rubik Mono One", serif;
     font-weight: 400;
