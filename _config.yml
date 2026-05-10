@@ -18,18 +18,17 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
+title: unevenly sustained attention
 email: your-email@example.com
+name: Motaquillah Maddane
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Meditations on life, art and programming
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://unevenlysustained.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 
 sass:
-  style: compact # possible values: nested expanded compact compressed
+  style: compressed # possible values: nested expanded compact compressed
 
 # Build settings
 # theme: minima
@@ -44,7 +43,8 @@ sass:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
+exclude:
+  - project-log/
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/

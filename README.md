@@ -1,6 +1,7 @@
 # unevenly suspended attention
 
 Personal website for my writing, reviews, and portfolio: [unevenly suspended attention](https://unevenlysuspendedattention.com).  
+
 Powered by [Jekyll](https://jekyllrb.com/).
 
 ## Run locally
@@ -13,3 +14,6 @@ Powered by [Jekyll](https://jekyllrb.com/).
    `bundle install`
 4. Start the server:  
    `make serve`
+
+
+> Note: For todos/other details see `/project-log`

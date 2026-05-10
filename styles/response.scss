@@ -25,7 +25,7 @@
 }
 
 .about {
-    max-width: 400px;
+    max-width: 42rem;
     width: 100%;
 }
 
@@ -78,9 +78,10 @@
         margin-bottom: 100px;
     }
 
+    /* Dual cover only; single cover uses figure.images--single (no extra img margin) */
     .post-content {
-        .images {
-            img { margin: 60px 0; }
+        .images .images__item img {
+            margin: 60px 0;
         }
     }
 
@@ -94,6 +95,12 @@
 
     .main--about {
         align-items: start;
+    }
+
+    .main--about .about {
+        flex: 0 1 42rem;
+        max-width: 42rem;
+        min-width: 0;
     }
 
     .posts {

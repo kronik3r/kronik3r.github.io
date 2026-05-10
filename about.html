@@ -3,16 +3,16 @@ layout: default
 title: About
 ---
 
-<div class="page home-page">
+<div class="page home-page about-page">
     {% include header.html type="default" %}
 
     <main class="main main--about">
         <div class="about">
-            <img src="{{ '/assets/motaki.jpeg' | relative_url }}" />
-
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolor eveniet voluptatibus quo perferendis omnis alias voluptates ducimus esse voluptatum, praesentium autem sapiente deserunt at quod corrupti molestias recusandae error possimus consectetur sint nostrum temporibus est, suscipit. Voluptatem, assumenda aliquam sapiente expedita pariatur, dolorem architecto ad repellendus, aliquid error possimus totam quibusdam dignissimos. Fuga eaque sequi maiores fugit cupiditate dolorum error doloribus sunt inventore totam. Id culpa velit quia! Repudiandae cum, unde deserunt fugiat ex reprehenderit hic quia neque possimus, autem laudantium quo fugit illum nulla harum in aperiam culpa. Numquam, ab corrupti eum quo deleniti pariatur minima possimus, harum. <br><br>
-
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ratione ipsam provident deleniti distinctio, aperiam consequuntur porro alias necessitatibus. Enim ratione vero similique ea! Magni perspiciatis nihil saepe, a pariatur!
+{% capture about_md %}
+{% include about.md %}
+{% endcapture %}
+            {{ about_md | markdownify }}
+            <img src="{{ '/assets/motaki.jpeg' | relative_url }}" alt="" />
         </div>
 
         <div class="menu page--title">

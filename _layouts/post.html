@@ -9,10 +9,20 @@ layout: default
         <div class="title texture">{{ page.title }}</div>
         <div class="subtitle">{{ page.subtitle }}</div>
 
+        {% if page.cover %}
+        <figure class="images images--single">
+            <img src="{{ page.cover | relative_url }}" alt="">
+        </figure>
+        {% elsif page.cover1 and page.cover2 %}
         <div class="images">
-            <img src="{{ page.cover1 | relative_url }}" alt="">
-            <img src="{{ page.cover2 | relative_url }}" alt="">
+            <figure class="images__item">
+                <img src="{{ page.cover1 | relative_url }}" alt="">
+            </figure>
+            <figure class="images__item">
+                <img src="{{ page.cover2 | relative_url }}" alt="">
+            </figure>
         </div>
+        {% endif %}
 
         <hr>
 
@@ -23,8 +33,8 @@ layout: default
         <hr>
 
         <div class="note">
-            If you have any thoughts on this, I woud love to hear what you think. Email me at:
-            <b>maddane.info@gmail.com</b>
+            If you have thoughts on this (or anything else, really), write me at:
+            <b>motaki.maddane at google thing dot com</b>
         </div>
     </main>
 

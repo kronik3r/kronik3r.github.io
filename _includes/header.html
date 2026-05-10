@@ -1,7 +1,7 @@
 {% if include.type == 'default' %}
-  <a class="header" href="/">
-      <h1>unevenly sustained attention</h1>
-      <p>Exploring ideas about programming</p>
+  <a class="header" href="/"> 
+      <h1>{{ site.title }}</h1>
+      <p>{{ site.description }}</p>
 
       <div class="blob-cont">
         <div class="yellow blob"></div>
@@ -13,7 +13,7 @@
   </a>
 {% elsif include.type == 'post' %}
   <div class="header--post" href="/">
-      <a href="/" class="base">unevenly sustained attention</a>
+      <a href="/" class="base">{{ site.title }}</a>
       <div class="header__menu">
           {% include menu.html %}
       </div>
