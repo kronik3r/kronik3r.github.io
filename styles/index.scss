@@ -229,7 +229,7 @@ hr {
         font-family: "Rubik Mono One", serif;
         font-weight: 400;
         font-style: normal;
-        font-size: clamp(3.75rem, 5vw + 2.75rem, 6.25rem);
+        font-size: clamp(3.75rem, calc(5vw + 2.75rem), 6.25rem);
         line-height: 0.92;
         word-spacing: -0.12em;
         letter-spacing: -0.02em;
