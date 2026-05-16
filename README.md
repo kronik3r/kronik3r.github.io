@@ -1,6 +1,6 @@
-# unevenly suspended attention
+# unevenly sustained attention
 
-Personal website for my writing, reviews, and portfolio: [unevenly suspended attention](https://unevenlysuspendedattention.com).  
+Personal website for my writing, reviews, and portfolio: [unevenly sustained attention](https://unevenlysustained.com).  
 
 Powered by [Jekyll](https://jekyllrb.com/).
 

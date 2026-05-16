@@ -1,0 +1,15 @@
+{%- if page.url == '/' or page.url == '/index.html' -%}
+  {{ site.title | append: " | " | append: site.name }}
+{%- elsif page.title -%}
+  {%- assign doc_title = page.title -%}
+  {%- if page.subtitle and page.subtitle.size > 0 -%}
+    {%- assign doc_title = doc_title | append: " | " | append: page.subtitle -%}
+  {%- endif -%}
+  {%- if page.categories and page.categories.size > 0 -%}
+    {%- assign category_label = page.categories.first | capitalize -%}
+    {%- assign doc_title = doc_title | append: " | " | append: category_label -%}
+  {%- endif -%}
+  {{ doc_title | append: " | " | append: site.title }}
+{%- else -%}
+  {{ site.title }}
+{%- endif -%}

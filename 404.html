@@ -37,7 +37,7 @@ title: Not found
         <div class="four-oh-four__note">
           Hey there 👋 — looks like the page you’re trying to reach doesn’t exist anymore. <br>
           You can head back to the <a href="{{ '/' | relative_url }}">home page</a> and try searching from there. <br>
-          If you’re stuck, feel free to email me at <a href="mailto:maddane.info@gmail.com?subject=Looking%20for%20page%20XXX%20In%20unevenlysuspendedattention.com">maddane.info@gmail.com</a> — I’ll do my best to help you out. <br>
+          If you’re stuck, feel free to email me at {% capture mail_subject %}Looking for page XXX In {{ site.title }}{% endcapture %}<a href="mailto:maddane.info@gmail.com?subject={{ mail_subject | uri_escape }}">maddane.info@gmail.com</a> — I’ll do my best to help you out. <br>
         </div>
     </main>
 
