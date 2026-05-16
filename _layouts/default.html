@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>{% include document_title.html %}</title>
+    {% include seo.html %}
+    <title>{{ seo_title }}</title>
 
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="{{ '/favicon/favicon-57x57.png' | relative_url }}">

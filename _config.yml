@@ -23,8 +23,13 @@ email: your-email@example.com
 name: Motaquillah Maddane
 description: >- # this means to ignore newlines until "baseurl:"
   Meditations on life, art and programming
+social_image: /assets/social-share.jpg
+social_image_width: 1274
+social_image_height: 630
+locale: en_US
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://unevenlysustained.com" # the base hostname & protocol for your site, e.g. http://example.com
+x: motaquillah
 
 
 sass:
